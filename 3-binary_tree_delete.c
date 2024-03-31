@@ -30,10 +30,8 @@ void binary_tree_delete(binary_tree_t *tree)
 				temp->left = NULL;
 			else
 				temp->right = NULL;
-			printf("freex %d\n", curr->n);
 			free(curr);
 		}
-		
 		curr = temp;
 		if (curr->parent == NULL)
 		{
@@ -41,7 +39,5 @@ void binary_tree_delete(binary_tree_t *tree)
 				break;
 		}
 	}
-	printf("freex %d\n", curr->n);
 	free(curr);
-	
 }
